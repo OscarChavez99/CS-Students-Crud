@@ -90,7 +90,44 @@ namespace CS_Students_Crud
                 MessageBox.Show("Non compatible image or,\nText cannot be longer than 100 chars", "Error");
                 return false;
             }
-            
+        }
+
+        internal bool UpdateStudent(ClStudent obj_student)
+        {
+            string QUERY = "UPDATE students SET name = @name, " +
+                "mail = @mail, picture = @picture, comment = @comment " +
+                "WHERE id = @id";
+            try
+            {
+                MySqlCommand command = new MySqlCommand(QUERY, con.GetConnection());
+                command.Parameters.Add(new MySqlParameter("@name", obj_student.name));
+                command.Parameters.Add(new MySqlParameter("@mail", obj_student.mail));
+                command.Parameters.Add(new MySqlParameter("@picture", obj_student.picture));
+                command.Parameters.Add(new MySqlParameter("@comment", obj_student.comment));
+                command.Parameters.Add(new MySqlParameter("@id", obj_student.id));
+                
+                return command.ExecuteNonQuery() > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cannot update, error:\n"+ex.ToString(), "Error");
+                return false;
+            }
+        }
+
+        internal bool DeleteStudent(object id)
+        {
+            string QUERY = "DELETE FROM students WHERE id =" +id+"";
+            try
+            {
+                MySqlCommand command = new MySqlCommand(QUERY, con.GetConnection());
+                return command.ExecuteNonQuery() > 0;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Cannot delete, error:\n" + ex.ToString(), "Error");
+                return false;
+            }
         }
     }
 }

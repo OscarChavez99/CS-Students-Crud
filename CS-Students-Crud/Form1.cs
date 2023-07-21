@@ -26,10 +26,15 @@ namespace CS_Students_Crud
 
         //-----------Functions---------------
 
-        /*private bool CheckIfIdExist()
+        private bool FullData()
         {
-
-        }*/
+            if(txtName.Text == "" || txtMail.Text == "")
+            {
+                MessageBox.Show("Incomplete data", "Error");
+                return false;
+            }
+            return true;
+        }
 
         private ClStudent CreateObject()
         {
@@ -92,22 +97,67 @@ namespace CS_Students_Crud
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if(txtID.Text != "")
+            {
+                MessageBox.Show("Student already exist, use UPDATE button", "Error");
+                return;
+            }
+
+            if (!FullData())
+                return;
+
             obj_student = CreateObject();
             if (obj_sql_student.InsertStudent(obj_student))
+            {
                 MessageBox.Show("Student Added!", "Success");
+                Clear();
+                LoadDataGrid(txtSearch.Text);
+            }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (!FullData())
+                return;
+
+            if (txtID.Text == "")
+            {
+                MessageBox.Show("Student doesn't exist, use SAVE button", "Error");
+                return;
+            }
+
+            obj_student = CreateObject();
+            if (obj_sql_student.UpdateStudent(obj_student))
+                MessageBox.Show("Student Updated!", "Success");
 
             Clear();
             LoadDataGrid(txtSearch.Text);
         }
 
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCancel_Click(object sender, EventArgs e)
         {
             Clear();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text == "")
+            {
+                MessageBox.Show("Select a student to delete", "Error");
+                return;
+            }
+
+            if (MessageBox.Show("Are you sure you want to delete '" + txtName.Text + "'?",
+                "Delete product", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                int id = int.Parse(txtID.Text);
+                if (obj_sql_student.DeleteStudent(id))
+                {
+                    MessageBox.Show("Student deleted", "Success");
+                    Clear();
+                    LoadDataGrid(txtSearch.Text);
+                }
+            }
         }
 
         private void dgvStudents_CellClick(object sender, DataGridViewCellEventArgs e)
