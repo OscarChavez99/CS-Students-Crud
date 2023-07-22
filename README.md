@@ -22,5 +22,5 @@ A C# .NET Windows Forms project for students administration
 3. Download this project
 4. Open "CS-Students-Crud.sln" (you need Visual Studio program installed on your computer): <br>
   ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/3c96b4da-4bc2-4879-8a98-d2215721ea0e)
-5. Run your application or press 'F5' key:
+5. Run your application or press 'F5' key: <br>
   ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/e93b4c14-93a0-46ba-bf50-15e8bb704364)
