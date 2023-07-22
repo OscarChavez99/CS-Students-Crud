@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,13 +45,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.dgvStudents = new System.Windows.Forms.DataGridView();
-            this.txtComment = new System.Windows.Forms.RichTextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.IDColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MailColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PictureColumn = new System.Windows.Forms.DataGridViewImageColumn();
             this.CommentColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtComment = new System.Windows.Forms.RichTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStudent)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStudents)).BeginInit();
             this.SuspendLayout();
@@ -211,40 +212,20 @@
             this.MailColumn,
             this.PictureColumn,
             this.CommentColumn});
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStudents.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStudents.Location = new System.Drawing.Point(340, 58);
             this.dgvStudents.Name = "dgvStudents";
             this.dgvStudents.ReadOnly = true;
             this.dgvStudents.Size = new System.Drawing.Size(457, 276);
             this.dgvStudents.TabIndex = 16;
             this.dgvStudents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudents_CellClick);
-            // 
-            // txtComment
-            // 
-            this.txtComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtComment.Location = new System.Drawing.Point(340, 367);
-            this.txtComment.Name = "txtComment";
-            this.txtComment.Size = new System.Drawing.Size(457, 99);
-            this.txtComment.TabIndex = 17;
-            this.txtComment.Text = "";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(531, 340);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 20);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Comments:";
             // 
             // IDColumn
             // 
@@ -268,6 +249,9 @@
             // 
             // PictureColumn
             // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.NullValue = "System.Drawing.Bitmap";
+            this.PictureColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.PictureColumn.HeaderText = "Picture";
             this.PictureColumn.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Stretch;
             this.PictureColumn.Name = "PictureColumn";
@@ -279,6 +263,26 @@
             this.CommentColumn.Name = "CommentColumn";
             this.CommentColumn.ReadOnly = true;
             this.CommentColumn.Visible = false;
+            // 
+            // txtComment
+            // 
+            this.txtComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtComment.Location = new System.Drawing.Point(340, 367);
+            this.txtComment.Name = "txtComment";
+            this.txtComment.Size = new System.Drawing.Size(457, 99);
+            this.txtComment.TabIndex = 17;
+            this.txtComment.Text = "";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(531, 340);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 20);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Comments:";
             // 
             // Form1
             // 

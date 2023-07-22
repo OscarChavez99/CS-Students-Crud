@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI.Relational;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -86,7 +87,7 @@ namespace CS_Students_Crud
                     list_students[i].mail,
                     Image.FromStream(new MemoryStream(list_students[i].picture)),
                     list_students[i].comment
-                    );
+                );
             }
         }
 
@@ -188,6 +189,6 @@ namespace CS_Students_Crud
                 pictureBoxStudent.ImageLocation = openFileDialog.FileName;
                 txtAddImage.Text = "Image:";
             }
-        }        
+        }
     }
 }
