@@ -3,12 +3,9 @@ A C# .NET Windows Forms project for students administration
 
 ## This CRUD allows:
 
-- Add an image from your files: <br>
- ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/de225d3d-f535-4598-82c5-4344b8ce647d)
-- Filter by ID, name OR mail: <br>
-  ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/f7cf8da1-ddb5-42fe-9a04-4a910a9eb62d)
-- All CRUD functions with validations: <br>
-  ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/9651f4b9-5388-4b71-a372-d8746915d790)
+- Add an image from your files: <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/fdfd6294-30d1-4164-a721-337884635641)
+- Filter by ID, name OR mail: <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/a9b29a86-b1c0-409d-82a9-85c72b5f5e0b)
+- All CRUD functions with validations: <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/e2aa1133-423b-468f-83fc-2b735535cb5f)
 
 ## How to run:
 
