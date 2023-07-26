@@ -12,8 +12,6 @@ A C# .NET Windows Forms project for students administration
 
 1. Open your MySQL database administration tool (I'm using PHPMyAdmin) and create a database called "school": <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/15ccc319-302a-4a70-a1ad-33e640d12808)
 2. Create a table called "students" with this columns: <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/36c64cf7-5312-4817-a4a4-8913aba4baa8)
-3. Download this project: <br> 
-4. Open "CS-Students-Crud.sln" (you need Visual Studio program installed on your computer): <br>
-  ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/3c96b4da-4bc2-4879-8a98-d2215721ea0e)
-5. Run your application or press 'F5' key: <br>
-  ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/e93b4c14-93a0-46ba-bf50-15e8bb704364)
+3. Download this project: <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/b0e622f9-fc41-4d7d-b15f-0ac1d7563d28)
+4. Open "CS-Students-Crud.sln" (you need Visual Studio program installed on your computer): <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/9b6fa888-d966-450f-920a-9bb1e3208ef1)
+5. Run your application or press 'F5' key: <br> 
