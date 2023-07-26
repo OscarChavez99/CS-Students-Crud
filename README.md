@@ -15,4 +15,3 @@ A C# .NET Windows Forms project for students administration
 3. Download this project: <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/b0e622f9-fc41-4d7d-b15f-0ac1d7563d28)
 4. Open "CS-Students-Crud.sln" (you need Visual Studio program installed on your computer): <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/9b6fa888-d966-450f-920a-9bb1e3208ef1)
 5. Run the application or press 'F5' key: <br> ![image](https://github.com/OscarChavez99/CS-Students-Crud/assets/80979314/c189f974-7e8c-4be0-9108-5e2b9d1de5f0)
-
